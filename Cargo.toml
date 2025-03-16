@@ -1,14 +1,18 @@
 [workspace]
 resolver = "2"
-members = ["name_of_my_app"]
-default-members = ["name_of_my_app"]
+members = ["app_name", "app_name-lib"]
+default-members = ["app_name"]
 
 [workspace.dependencies]
 # Logging crates
 tracing = "0.1.40"
-tracing-subscriber = { version = "0.3.18", features = ["parking_lot", "tracing-log"] }
+tracing-subscriber = { version = "0.3.18", features = [
+    "parking_lot",
+    "tracing-log",
+    "env-filter",
+] }
 
 # Error handling crates
-thiserror = "1.0.63"
 color-eyre = "0.6.3"
 eyre = "0.6.12"
+thiserror = "1.0.63"

@@ -1,0 +1,17 @@
+[package]
+name = "app_name"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# Logging crates
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+# Error handling crates
+color-eyre = { workspace = true }
+eyre = { workspace = true }
+thiserror = { workspace = true }
+
+app_name-lib = { path = "../app_name-lib" }
