@@ -1,5 +1,5 @@
 [package]
-name = "app_name"
+name = "{{crate_name}}"
 version = "0.1.0"
 edition = "2021"
 publish = false
@@ -14,4 +14,4 @@ color-eyre = { workspace = true }
 eyre = { workspace = true }
 thiserror = { workspace = true }
 
-app_name-lib = { path = "../app_name-lib" }
+"{{crate_name}}-lib" = { path = "../{{crate_name}}-lib" }

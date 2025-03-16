@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
-members = ["app_name", "app_name-lib"]
-default-members = ["app_name"]
+members = ["{{crate_name}}", "{{crate_name}}-lib"]
+default-members = ["{{crate_name}}"]
 
 [workspace.dependencies]
 # Logging crates
